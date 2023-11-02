@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoping v3</title>
+</head>
+<body>
+
+<script>
+    const pi = Math.PI; // const is a variable bound to a CONSTYANT value (that does not change)
+    const phi = (1 + Math.sqrt(5)) / 2;
+
+    for(let i = 0; i <= 10; i++)
+    {
+        let timesPhi = parseFloat(i * phi)
+        console.log(i + " times phi = " + timesPhi.toFixed(4)); 
+    }
+
+    console.log("outside i: " + i); // this line runs AFTER the iteration (repetition)
+
+
+</script>
+
+</body>
+</html>
